@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  font-weight: 600;
+}
+.percentage {
+  font-weight: 600;
+  margin: 10px;
+  color: rgb(124, 117, 224);
+}

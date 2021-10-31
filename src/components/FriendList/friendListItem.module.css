@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-left: 15px;
+  box-shadow: 5px 3px 3px skyblue;
+}
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.avatar {
+  margin-right: 20px;
+  margin-left: 30px;
+}
+.name {
+  color: rgb(225, 142, 65);
+  font-weight: 800;
+  font-size: 20px;
+}
+.onLine,
+.offLine {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+.onLine {
+  background-color: green;
+}
+.offLine {
+  background-color: red;
+}

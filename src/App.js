@@ -1,7 +1,38 @@
 import "./App.css";
 
-function App() {
-  return <div className="App"></div>;
-}
+// function App() {
+//   return <div className="App"></div>;
+// }
 
-export default App;
+// export default App;
+import user from "./components/Profile/user.json";
+import Profile from "./components/Profile/Profile";
+
+import stats from "./components/Statistics/statistical-data.json";
+import Statistics from "./components/Statistics/Statistics";
+
+import friends from "./components/FriendList/friends.json";
+import FriendList from "./components/FriendList/FriendList";
+
+import transactions from "./components/TransactionHistory/transactions.json";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+
+export default function App() {
+  return (
+    <div className="App">
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+
+      <Statistics title="Upload stats" stats={stats} />
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
+    </div>
+  );
+}
