@@ -1,10 +1,5 @@
 import "./App.css";
 
-// function App() {
-//   return <div className="App"></div>;
-// }
-
-// export default App;
 import user from "./components/Profile/user.json";
 import Profile from "./components/Profile/Profile";
 
