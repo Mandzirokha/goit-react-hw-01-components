@@ -1,26 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  /* text-decoration: none; */
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .profile {
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .description {
+  background-color: rgba(116, 185, 255, 0.6);
+  padding: 60px 40px;
 }
 
 .avatar {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, rgb(116, 185, 255), #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .name {
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
 }
 
 .tag {
+  font-size: 18px;
+  color: #e66767;
+  padding: 10px;
 }
 
 .location {
+  font-size: 18px;
+  color: #e66767;
 }
 
 .stats {
+  display: flex;
+  justify-content: space-around;
+  background: #f4f4f4;
+  padding: 10px;
 }
 
 .label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #2c3a47;
 }
 
 .quantity {
+  display: block;
+  color: #e66767;
+  font-size: 25px;
 }
