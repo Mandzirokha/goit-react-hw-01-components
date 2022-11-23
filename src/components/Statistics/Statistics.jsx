@@ -7,8 +7,12 @@ export const Statistics = ({ title, stats }) => {
       <h2 className={css.title}>{title}</h2>
 
       <ul className={css.stat_list}>
-        {stats.map(({ label, pecentage, id }) => {
-          <Stat key={id} label={label} pecentage={pecentage} />;
+        {stats.map(stat => {
+          return (
+            <li className={css.item} key={stat.id}>
+              <Stat stat={stat} />
+            </li>
+          );
         })}
       </ul>
     </section>
