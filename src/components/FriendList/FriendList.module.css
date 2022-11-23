@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 400px;
+  box-shadow: 0 3px 6px #00000030;
+  background: linear-gradient(130deg, rgb(116, 185, 255), #e66767);
+  border: 2px solid rgba(116, 185, 255, 0.6);
+  overflow: hidden;
+}
+
+/* .status {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  border-radius: 50%;
+}
+
+.offline {
+  composes: status;
+  background-color: #ce3b3b;
+}
+
+.online {
+  composes: status;
+  background-color: #278145;
+} */
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+}
