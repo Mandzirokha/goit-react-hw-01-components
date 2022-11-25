@@ -1,6 +1,11 @@
 import styled from '@emotion/styled';
+
 export const ProfileBox = styled.div`
   width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
@@ -33,6 +38,7 @@ export const Stats = styled.ul`
   display: flex;
   justify-content: space-around;
   background: #f4f4f4;
+  margin: 0;
   padding: 10px;
   border: 2px solid rgba(116, 185, 255, 0.6);
 `;

@@ -2,22 +2,22 @@ import styled from '@emotion/styled';
 
 export const Status = styled.span`
   flex-shrink: 0;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   margin-right: 10px;
-
+  composes: status;
   border-radius: 50%;
+  background-color: ${({ isOnline }) => {
+    switch (isOnline) {
+      case true:
+        return 'green';
+      case false:
+        return 'red';
+      default:
+        return 'black';
+    }
+  }};
 `;
-
-// .offline {
-//   composes: status;
-//   background-color: #ce3b3b;
-// }
-
-// .online {
-//   composes: status;
-//   background-color: #278145;
-// }
 
 export const Avatar = styled.img`
   margin-right: 10px;
