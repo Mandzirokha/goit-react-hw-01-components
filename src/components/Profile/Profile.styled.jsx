@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 export const ProfileBox = styled.div`
   width: 400px;
   text-align: center;

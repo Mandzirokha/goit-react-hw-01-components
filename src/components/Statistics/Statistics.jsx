@@ -1,20 +1,25 @@
-import { Stat } from './Stat';
-import css from './Statistics.module.css';
+import { Stat } from './Stat/Stat';
+import {
+  StatisticsSection,
+  Title,
+  StatisticsList,
+  StatItem,
+} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
+    <StatisticsSection>
+      <Title>{title}</Title>
 
-      <ul className={css.stat_list}>
+      <StatisticsList>
         {stats.map(stat => {
           return (
-            <li className={css.item} key={stat.id}>
+            <StatItem key={stat.id}>
               <Stat stat={stat} />
-            </li>
+            </StatItem>
           );
         })}
-      </ul>
-    </section>
+      </StatisticsList>
+    </StatisticsSection>
   );
 };
