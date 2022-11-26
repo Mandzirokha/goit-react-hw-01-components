@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const FriendListItem = ({ friend: { name, avatar, isOnline } }) => {
   return (
     <>
-      <Status isOnline={isOnline} a={5}></Status>
+      <Status isOnline={isOnline}></Status>
       <Avatar src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>
     </>

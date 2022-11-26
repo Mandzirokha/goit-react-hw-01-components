@@ -30,3 +30,12 @@ export const StatItem = styled.li`
   font-size: 18px;
   padding: 20px;
 `;
+
+export const StatLabel = styled.span`
+  font-weight: 700;
+  padding-bottom: 10px;
+`;
+
+export const StatPercentage = styled.span`
+  font-weight: 700;
+`;
