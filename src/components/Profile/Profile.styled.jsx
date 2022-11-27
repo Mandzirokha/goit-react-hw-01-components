@@ -37,6 +37,7 @@ export const Location = styled.p`
 export const Stats = styled.ul`
   display: flex;
   justify-content: space-around;
+  list-style: none;
   background: #f4f4f4;
   margin: 0;
   padding: 10px;

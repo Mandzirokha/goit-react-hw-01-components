@@ -3,7 +3,9 @@ import styled from '@emotion/styled';
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  padding: 0;
 `;
 
 export const Item = styled.li`
